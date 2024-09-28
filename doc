@@ -1,0 +1,58 @@
+/**
+ * @class Account
+ * @brief Represents a bank account with basic operations.
+ * 
+ * The Account class provides functionalities to manage a bank account,
+ * including depositing and withdrawing money, and retrieving account details.
+ * It also supports file operations for saving and loading account information.
+ * 
+ * @private
+ * @var int accountNumber
+ *      The unique number identifying the account.
+ * @var string accountHolder
+ *      The name of the account holder.
+ * @var double balance
+ *      The current balance of the account.
+ * 
+ * @public
+ * @fn Account()
+ *      Default constructor initializing account with default values.
+ * @fn Account(int accNum, string holder)
+ *      Constructor initializing account with given account number and holder name.
+ * @param accNum The account number.
+ * @param holder The name of the account holder.
+ * 
+ * @fn void deposit(double amount)
+ *      Deposits a specified amount into the account.
+ * @param amount The amount to be deposited.
+ * 
+ * @fn void withdraw(double amount)
+ *      Withdraws a specified amount from the account.
+ * @param amount The amount to be withdrawn.
+ * 
+ * @fn double getBalance() const
+ *      Retrieves the current balance of the account.
+ * @return The current balance.
+ * 
+ * @fn string getAccountHolder() const
+ *      Retrieves the name of the account holder.
+ * @return The name of the account holder.
+ * 
+ * @fn int getAccountNumber() const
+ *      Retrieves the account number.
+ * @return The account number.
+ * 
+ * @fn void writeToFile(ofstream &file)
+ *      Writes the account details to a file.
+ * @param file The output file stream to write to.
+ * 
+ * @fn static Account readFromFile(ifstream &file)
+ *      Reads account details from a file.
+ * @param file The input file stream to read from.
+ * @return An Account object with the details read from the file.
+ * 
+ * @fn static Account* searchAccount(int accNum)
+ *      Searches for an account by account number.
+ * @param accNum The account number to search for.
+ * @return A pointer to the Account object if found, otherwise nullptr.
+ */
